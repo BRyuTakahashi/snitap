@@ -28,12 +28,17 @@
   box-sizing: 0;
 }
 
-html button {
+html,
+button {
   font: 500 1rem/1.5 var(--ff-montserrat);
 }
 
+/* html {
+  zoom: 0.5;
+} */
+
 h1 {
-  font-family: var(--ff-syne);
+  font-family: var(--ff-montserrat);
   font-weight: 700;
   font-size: var(--fs-lg);
   line-height: 1.25;
@@ -46,16 +51,21 @@ h2 {
   line-height: 1.2;
 }
 
-span {
+/* span {
   font-family: var(--ff-montserrat);
   font-weight: 500;
   font-size: var(--fs-span);
   line-height: 1.5;
-}
+} */
 
 @media (width <= 80em) {
   :root {
     --fs-lg: 2rem;
     --fs-mid: 1.5rem;
   }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
